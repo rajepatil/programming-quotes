@@ -6,7 +6,7 @@ function Button(props) {
     color: props.color.bodycolor
   };
   return (
-    <div className="btn" style={styles}>
+    <div className="btn" style={styles} onClick={() => props.getColorPair()}>
       {props.color.buttoncolor}
     </div>
   );

@@ -11,7 +11,7 @@ function Body(props) {
         <div className="body" style={styles}>
 
             <h1 className="bodyfont">{props.color.bodycolor}</h1> 
-            <Button  color={props.color} />
+            <Button  color={props.color} getColorPair= {props.getColorPair}/>
       
         </div>
     );
