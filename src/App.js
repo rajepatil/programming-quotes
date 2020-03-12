@@ -12,17 +12,17 @@ class App extends React.Component {
     this.state = {
       bodycolor: "black",
       buttoncolor: "white",
-      ratio:"",
-      score:""
+      ratio: "",
+      score: ""
     };
   }
 
   getColorPair = () => {
     const contrast = getContrast();
-   
-    const [ bodycolor, buttoncolor] = [contrast.pair[0], contrast.pair[1]];
+
+    const [bodycolor, buttoncolor] = [contrast.pair[0], contrast.pair[1]];
     const { ratio, score } = contrast;
-   
+
     this.setState({ bodycolor, buttoncolor, ratio, score });
   };
 
