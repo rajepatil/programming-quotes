@@ -18,7 +18,6 @@ class App extends React.Component {
   }
 
   componentDidMount() {
-    console.log("cdm");
     try {
       this.setData();
     } catch (err) {}

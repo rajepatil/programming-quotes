@@ -1,22 +1,22 @@
 import React from "react";
 
 import Button from "./Button";
+import Header from "./Header";
+import Quote from "./Quote";
 
 function Home(props) {
-    const styles = {
-        color: props.data.buttoncolor,
-        backgroundColor: props.data.bodycolor
-    };
+  const styles = {
+    color: props.data.buttoncolor,
+    backgroundColor: props.data.bodycolor
+  };
 
-    console.log("home", props.data.post);
-    
-    return (
-
-        <div className="body" style={styles}>
-            <h1 className="bodyfont">{props.data.post.en}</h1>
-            <Button data={props.data} setData={props.setData} />
-        </div>
-    );
+  return (
+    <div className="body" style={styles}>
+      <Header data={props.data} />
+      <Quote data={props.data} />
+      <Button data={props.data} setData={props.setData} />
+    </div>
+  );
 }
 
 export default Home;

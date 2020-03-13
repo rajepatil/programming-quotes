@@ -1,14 +1,20 @@
 import React from "react";
 
+import { Button as styledButton } from "antd";
+
 function Button(props) {
   const styles = {
-    backgroundColor: props.data.buttoncolor,
-    color: props.data.bodycolor
+    color: props.data.bodycolor,
+    backgroundColor: props.data.buttoncolor
   };
   return (
-    <div className="btn" style={styles} onClick={() => props.setData()}>
-      {props.data.buttoncolor}
-    </div>
+    <styledButton
+      className="btn"
+      style={styles}
+      onClick={() => props.setData()}
+    >
+      quote
+    </styledButton>
   );
 }
 
