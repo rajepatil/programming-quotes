@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/programming-quotes/static/css/main.bed961d1.chunk.css",
-    "main.js": "/programming-quotes/static/js/main.85ab5868.chunk.js",
-    "main.js.map": "/programming-quotes/static/js/main.85ab5868.chunk.js.map",
-    "runtime-main.js": "/programming-quotes/static/js/runtime-main.98547e89.js",
-    "runtime-main.js.map": "/programming-quotes/static/js/runtime-main.98547e89.js.map",
-    "static/css/2.117ce29f.chunk.css": "/programming-quotes/static/css/2.117ce29f.chunk.css",
-    "static/js/2.a0341557.chunk.js": "/programming-quotes/static/js/2.a0341557.chunk.js",
-    "static/js/2.a0341557.chunk.js.map": "/programming-quotes/static/js/2.a0341557.chunk.js.map",
+    "main.css": "/programming-quotes/static/css/main.4fe80639.chunk.css",
+    "main.js": "/programming-quotes/static/js/main.364ce824.chunk.js",
+    "main.js.map": "/programming-quotes/static/js/main.364ce824.chunk.js.map",
+    "runtime-main.js": "/programming-quotes/static/js/runtime-main.57b155bc.js",
+    "runtime-main.js.map": "/programming-quotes/static/js/runtime-main.57b155bc.js.map",
+    "static/css/2.2ba5c47e.chunk.css": "/programming-quotes/static/css/2.2ba5c47e.chunk.css",
+    "static/js/2.b73e871c.chunk.js": "/programming-quotes/static/js/2.b73e871c.chunk.js",
+    "static/js/2.b73e871c.chunk.js.map": "/programming-quotes/static/js/2.b73e871c.chunk.js.map",
     "index.html": "/programming-quotes/index.html",
-    "precache-manifest.d2dce79a8b26f052e7be91257ff6b615.js": "/programming-quotes/precache-manifest.d2dce79a8b26f052e7be91257ff6b615.js",
+    "precache-manifest.6e7c158a6643d245286fed88f729494e.js": "/programming-quotes/precache-manifest.6e7c158a6643d245286fed88f729494e.js",
     "service-worker.js": "/programming-quotes/service-worker.js",
-    "static/css/2.117ce29f.chunk.css.map": "/programming-quotes/static/css/2.117ce29f.chunk.css.map",
-    "static/css/main.bed961d1.chunk.css.map": "/programming-quotes/static/css/main.bed961d1.chunk.css.map",
-    "static/js/2.a0341557.chunk.js.LICENSE.txt": "/programming-quotes/static/js/2.a0341557.chunk.js.LICENSE.txt"
+    "static/css/2.2ba5c47e.chunk.css.map": "/programming-quotes/static/css/2.2ba5c47e.chunk.css.map",
+    "static/css/main.4fe80639.chunk.css.map": "/programming-quotes/static/css/main.4fe80639.chunk.css.map",
+    "static/js/2.b73e871c.chunk.js.LICENSE.txt": "/programming-quotes/static/js/2.b73e871c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.98547e89.js",
-    "static/css/2.117ce29f.chunk.css",
-    "static/js/2.a0341557.chunk.js",
-    "static/css/main.bed961d1.chunk.css",
-    "static/js/main.85ab5868.chunk.js"
+    "static/js/runtime-main.57b155bc.js",
+    "static/css/2.2ba5c47e.chunk.css",
+    "static/js/2.b73e871c.chunk.js",
+    "static/css/main.4fe80639.chunk.css",
+    "static/js/main.364ce824.chunk.js"
   ]
 }
