@@ -2,12 +2,12 @@ import React from "react";
 
 function Button(props) {
   const styles = {
-    backgroundColor: props.color.buttoncolor,
-    color: props.color.bodycolor
+    backgroundColor: props.data.buttoncolor,
+    color: props.data.bodycolor
   };
   return (
-    <div className="btn" style={styles} onClick={() => props.getColorPair()}>
-      {props.color.buttoncolor}
+    <div className="btn" style={styles} onClick={() => props.setData()}>
+      {props.data.buttoncolor}
     </div>
   );
 }

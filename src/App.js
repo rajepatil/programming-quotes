@@ -1,10 +1,11 @@
 import React from "react";
-import logo from "./logo.svg";
-
 import "reset-css";
+
 import "./App.css";
-import Body from "./components/Body";
-import getContrast from "./getContrast";
+import Home from "./components/Home";
+// import getContrast from "./getContrast";
+// import fatchquote from "./fatchquote";
+import getData from "./getData";
 
 class App extends React.Component {
   constructor(props) {
@@ -13,21 +14,25 @@ class App extends React.Component {
       bodycolor: "black",
       buttoncolor: "white",
       ratio: "",
-      score: ""
+      score: "",
+      post: {}
     };
   }
 
-  getColorPair = () => {
-    const contrast = getContrast();
+  componentDidMount() {
+    console.log("cdm");
+    try {
+      this.setData();
+    } catch (err) {}
+  }
 
-    const [bodycolor, buttoncolor] = [contrast.pair[0], contrast.pair[1]];
-    const { ratio, score } = contrast;
-
-    this.setState({ bodycolor, buttoncolor, ratio, score });
+  setData = async () => {
+    const data = await getData();
+    this.setState(data);
   };
 
   render() {
-    return <Body color={this.state} getColorPair={this.getColorPair} />;
+    return <Home data={this.state} setData={this.setData} />;
   }
 }
 
