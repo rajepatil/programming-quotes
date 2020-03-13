@@ -3,16 +3,14 @@ import "reset-css";
 
 import "./App.css";
 import Home from "./components/Home";
-// import getContrast from "./getContrast";
-// import fatchquote from "./fatchquote";
 import getData from "./getData";
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      bodycolor: "black",
-      buttoncolor: "white",
+      bodycolor: "",
+      buttoncolor: "",
       ratio: "",
       score: "",
       post: {}

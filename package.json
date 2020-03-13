@@ -2,7 +2,7 @@
   "name": "get-contrast",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://rajeshmule.github.io/get-contrast",
+  "homepage": "https://rajeshmule.github.io/programming-quotes",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
