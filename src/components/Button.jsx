@@ -9,9 +9,9 @@ function Button(props) {
   };
   return (
     <styledButton
-      className="btn"
       style={styles}
       onClick={() => props.setData()}
+      className="btn"
     >
       quote
     </styledButton>

@@ -14,7 +14,9 @@ function Home(props) {
     <div className="body" style={styles}>
       <Header data={props.data} />
       <Quote data={props.data} />
-      <Button data={props.data} setData={props.setData} />
+      <div className="flex">
+        <Button data={props.data} setData={props.setData} />
+      </div>
     </div>
   );
 }

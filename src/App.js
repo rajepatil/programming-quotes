@@ -25,6 +25,7 @@ class App extends React.Component {
 
   setData = async () => {
     const data = await getData();
+    console.log(data);
     this.setState(data);
   };
 
