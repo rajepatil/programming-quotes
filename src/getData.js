@@ -8,7 +8,7 @@ const getData = async () => {
   const [bodycolor, buttoncolor] = [contrast.pair[0], contrast.pair[1]];
   const { ratio, score } = contrast;
 
-  return { post, bodycolor, buttoncolor, ratio, score };
+  return { post, bodycolor, buttoncolor, ratio, score, loading: false };
 };
 
 export default getData;
