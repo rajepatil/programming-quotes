@@ -1,7 +1,8 @@
 import React from "react";
-import Button from "./Button";
 
 function Header(props) {
+  console.log("Header", props);
+
   const styles = {
     backgroundColor: props.data.buttoncolor,
     color: props.data.bodycolor

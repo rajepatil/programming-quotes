@@ -10,15 +10,15 @@ function Quote(props) {
     borderColor: props.data.buttoncolor
   };
 
+  console.log("quote return", data.loading);
+
   return (
-    data && (
-      <div className="quote_card" style={styles}>
-        <h1 style={styles}>"{props.data.post.en}"</h1>
-        <h6 className="quote_author" style={styles}>
-          -{props.data.post.author}
-        </h6>
+    <div className="quote_card" style={styles}>
+      <p style={styles}>"{data.post.en}"</p>
+      <div className="quote_author" style={styles}>
+        -{data.post.author}
       </div>
-    )
+    </div>
   );
 }
 
