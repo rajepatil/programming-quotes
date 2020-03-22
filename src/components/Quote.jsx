@@ -14,9 +14,9 @@ function Quote(props) {
 
   return (
     <div className="quote_card" style={styles}>
-      <p style={styles}>"{data.post.en}"</p>
+      <p style={styles}>"{data.quote}"</p>
       <div className="quote_author" style={styles}>
-        -{data.post.author}
+        -{data.author}
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:400,500,500i,600i,700,700i,900&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Courgette&display=swap&subset=latin-ext");
 body {
-  font-family: "Source Code Pro", monospace;
+  font-family: "Courgette", cursive;
 }
 
 .app {
@@ -27,23 +27,41 @@ body {
 }
 
 .quote_card {
-  width: 80%;
+  width: 85%;
   padding: 20px 18px;
   margin: 30px auto;
   border: 2px solid;
-  border-radius: 8px;
+  border-radius: 10px;
   line-height: 1.8;
   font-size: 18px;
+  text-align: justify;
 }
 
 .quote_author {
   text-align: right;
   font-size: smaller;
-  font-style: italic;
+  /* font-style: italic;  */
 }
 
 .footer {
   padding: 20px;
   text-align: center;
   font-size: large;
+}
+
+.btn {
+  border: none;
+  font-family: "Courgette", cursive;
+  border: 2px solid;
+  font-size: large;
+  padding: 3px 20px;
+  border-radius: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .quote_card {
+    width: 60%;
+    line-height: 1.8;
+    font-size: 30px;
+  }
 }

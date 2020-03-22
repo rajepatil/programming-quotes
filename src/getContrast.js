@@ -19,9 +19,7 @@ const getContrast = () => {
     accessible = contrast.isAccessible(color1, color2);
   }
 
-  var ratio = contrast.ratio(color1, color2).toFixed(2);
-  var score = contrast.score(color1, color2);
-  return { ratio, score, pair: [color1, color2] };
+  return { color1, color2 };
 };
 
 export default getContrast;

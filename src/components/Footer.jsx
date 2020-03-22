@@ -8,8 +8,10 @@ function Footer(props) {
     backgroundColor: props.data.buttoncolor
   };
   return (
-    <footer style={styles} onClick={() => props.setData()} className="footer">
-      click for random quote
+    <footer style={styles} className="footer">
+      <button style={styles} onClick={() => props.setData()} className="btn">
+        click me for random quote
+      </button>
     </footer>
   );
 }

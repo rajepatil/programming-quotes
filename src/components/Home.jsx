@@ -13,9 +13,8 @@ function Home() {
   const intialState = {
     bodycolor: null,
     buttoncolor: null,
-    ratio: null,
-    score: null,
-    post: {},
+    quote: null,
+    author: null,
     loading: true
   };
 

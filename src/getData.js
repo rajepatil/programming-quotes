@@ -5,10 +5,13 @@ const getData = async () => {
   const post = await fatchQuote();
   const contrast = await getContrast();
 
-  const [bodycolor, buttoncolor] = [contrast.pair[0], contrast.pair[1]];
-  const { ratio, score } = contrast;
+  const [bodycolor, buttoncolor] = [contrast.color1, contrast.color2];
+  console.log(post.en);
 
-  return { post, bodycolor, buttoncolor, ratio, score, loading: false };
+  const [quote, author] = [post.en, post.author];
+  // const { ratio, score } = contrast;
+
+  return { post, quote, author, bodycolor, buttoncolor, loading: false };
 };
 
 export default getData;
