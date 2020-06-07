@@ -1,7 +1,6 @@
 import React from "react";
 
 function Quote(props) {
-  console.log("Quote", props);
   const { data } = props;
 
   const styles = {
@@ -9,8 +8,6 @@ function Quote(props) {
     backgroundColor: props.data.bodycolor,
     borderColor: props.data.buttoncolor
   };
-
-  console.log("quote return", data.loading);
 
   return (
     <div className="quote_card" style={styles}>

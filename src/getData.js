@@ -6,7 +6,7 @@ const getData = async () => {
   const contrast = await getContrast();
 
   const [bodycolor, buttoncolor] = [contrast.color1, contrast.color2];
-  console.log(post.en);
+  // console.log(post.en);
 
   const [quote, author] = [post.en, post.author];
   // const { ratio, score } = contrast;

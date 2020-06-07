@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from "react";
 import { css } from "@emotion/core";
-
 import BounceLoader from "react-spinners/BounceLoader";
 
 import Header from "./Header";
 import Quote from "./Quote";
-
 import getData from "../getData";
 import Footer from "./Footer";
+
+var timer = null;
 
 function Home() {
   const intialState = {
     bodycolor: null,
     buttoncolor: null,
-    quote: null,
+    quote: "",
     author: null,
     loading: true
   };
@@ -26,24 +26,44 @@ function Home() {
 
   async function setData() {
     const data = await getData();
-    console.log("setData", data);
+    console.log("setData()");
     setResData(data);
   }
 
+  function pauseQuots() {
+    console.log("pause clicled");
+    clearInterval(timer);
+  }
+
   useEffect(() => {
-    console.log("useEffect has been called!");
+    console.log("1 useEffect has been called!");
     setData();
   }, []);
+
+  useEffect(() => {
+    console.log("2 useEffect has been called!");
+    // console.log(timer);
+    if (timer !== null) {
+      clearInterval(timer);
+    }
+
+    let wordCount = resData.quote.trim().split(" ").length;
+    console.log(wordCount);
+
+    let timeNeeded = (wordCount / 6) * 1000;
+    console.log(timeNeeded);
+    if (wordCount > 1) {
+      timer = setInterval(setData, timeNeeded);
+    }
+  }, [resData]);
 
   const styles = {
     color: resData.buttoncolor,
     backgroundColor: resData.bodycolor
   };
 
-  console.log("home loading is", resData.loading);
-
   return (
-    <>
+    <div>
       {
         <div className="app flex" style={styles}>
           <Header data={resData} />
@@ -58,10 +78,10 @@ function Home() {
           ) : (
             <Quote data={resData} />
           )}
-          <Footer data={resData} setData={setData} />
+          <Footer data={resData} setData={setData} pauseQuots={pauseQuots} />
         </div>
       }
-    </>
+    </div>
   );
 }
 
